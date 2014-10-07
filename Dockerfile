@@ -3,7 +3,6 @@ FROM shippableimages/ubuntu1204_base:0.0.3
 RUN apt-get update && apt-get install -y \
     binutils \
     bison \
-    build-essential \
     curl \
     gcc \
     make \
