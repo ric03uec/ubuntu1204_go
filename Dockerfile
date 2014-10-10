@@ -16,6 +16,7 @@ RUN /bin/bash -c ". /root/.gvm/scripts/gvm && gvm install go1.3";
 RUN /bin/bash -c ". /root/.gvm/scripts/gvm && gvm install release";
 RUN /bin/bash -c ". /root/.gvm/scripts/gvm && gvm install tip";
 
-RUN /bin/bash -c ". /root/.gvm/scripts/gvm && gvm use go1.3 --default";
+env GVM_ROOT /root/.gvm
+env PATH $PATH:/root/.gvm/bin
 
 CMD ["/bin/bash"]
