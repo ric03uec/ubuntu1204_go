@@ -11,9 +11,7 @@ Shippable CI image for  Golang on Ubuntu 12.04. Available go versions:
 
 ## How to use
 You can use this image to run go builds on Shippable. Just update your
-`shippable.yml` file and add the `build_image` directive. You should also
-activate the appropriate virtual envrionment so your build runs against the
-correct version of go. The go versions you specify in the go directive in the YML will be available in the `$SHIPPABLE_GO_VERSION` environment variable. Here's a sample YML file to get you going:
+`shippable.yml` file and add the `build_image` directive. Add build_image tag to your shippable.yml file and activate gvm in before_install section to run your build against the correct version of go. Here's a sample YML file to get you going:
 
 ````
 language: go
