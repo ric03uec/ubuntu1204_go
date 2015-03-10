@@ -13,6 +13,7 @@ RUN curl -s -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/g
 RUN /bin/bash -c ". /root/.gvm/scripts/gvm && gvm install go1.1";
 RUN /bin/bash -c ". /root/.gvm/scripts/gvm && gvm install go1.2";
 RUN /bin/bash -c ". /root/.gvm/scripts/gvm && gvm install go1.3";
+RUN /bin/bash -c ". /root/.gvm/scripts/gvm && gvm install go1.4";
 RUN /bin/bash -c ". /root/.gvm/scripts/gvm && gvm install release";
 RUN /bin/bash -c ". /root/.gvm/scripts/gvm && gvm install tip";
 
